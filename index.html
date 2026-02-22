@@ -5,154 +5,213 @@
     <title>Lalith Kumar & Associates | Law Firm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Didone / Modern Serif Typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+
     <style>
-        body {
+
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('court.jpg') no-repeat center center fixed;
-            background-size: cover;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        /* Dark overlay */
-        body::before {
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #000;
+            color: #d4af37;
+            text-align: center;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            height: 90vh;
+            background: url('court.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Dark Shadow Overlay */
+        .hero::before {
             content: "";
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: -1;
+            background: rgba(0, 0, 0, 0.75);
         }
 
-        header {
-            background: rgba(26, 35, 126, 0.9);
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .hero-content {
+            position: relative;
+            z-index: 2;
         }
 
+        .hero h1 {
+            font-size: 55px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #d4af37;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #ffffff;
+        }
+
+        /* NAVIGATION */
         nav {
-            background: rgba(40, 53, 147, 0.9);
-            padding: 10px;
-            text-align: center;
+            background: #000;
+            padding: 20px;
+            border-top: 1px solid #d4af37;
+            border-bottom: 1px solid #d4af37;
         }
 
         nav a {
-            color: white;
-            margin: 15px;
+            color: #d4af37;
             text-decoration: none;
-            font-weight: bold;
+            margin: 0 25px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         nav a:hover {
-            color: #ffcc00;
+            color: #ffffff;
         }
 
+        /* SECTIONS */
         section {
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.95);
-            margin: 30px;
-            border-radius: 8px;
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
         }
 
-        h2 {
-            color: #1a237e;
+        section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #d4af37;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #f5f5f5;
+        }
+
+        .practice-list {
+            list-style: none;
+            margin-top: 30px;
         }
 
         .practice-list li {
-            margin-bottom: 10px;
+            margin: 15px 0;
+            font-size: 18px;
+            color: #ffffff;
         }
 
-        .contact-form input, 
+        /* CONTACT FORM */
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .contact-form input,
         .contact-form textarea {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+            padding: 12px;
+            margin: 15px 0;
+            background: #111;
+            border: 1px solid #d4af37;
+            color: white;
+            font-family: 'Playfair Display', serif;
         }
 
         .contact-form button {
-            background-color: #1a237e;
-            color: white;
-            padding: 10px 20px;
+            background: #d4af37;
+            color: #000;
+            padding: 12px 30px;
             border: none;
-            border-radius: 5px;
+            font-weight: bold;
             cursor: pointer;
+            letter-spacing: 1px;
         }
 
         .contact-form button:hover {
-            background-color: #283593;
+            background: #b8962e;
         }
 
         footer {
-            text-align: center;
-            background: rgba(26, 35, 126, 0.9);
-            color: white;
-            padding: 15px;
+            padding: 30px;
+            border-top: 1px solid #d4af37;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #aaa;
         }
+
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Lalith Kumar & Associates</h1>
-    <p>Advocates & Legal Consultants | Bangalore</p>
-</header>
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>LALITH KUMAR & ASSOCIATES</h1>
+        <p>Advocates & Legal Consultants | Bangalore</p>
+    </div>
+</div>
 
+<!-- NAV -->
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#practice">Areas of Practice</a>
+    <a href="#about">About</a>
+    <a href="#practice">Practice Areas</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
-    <h2>Welcome</h2>
-    <p>
-        Welcome to Lalith Kumar & Associates. We provide expert legal solutions 
-        with integrity, dedication, and professionalism.
-    </p>
-</section>
-
+<!-- ABOUT -->
 <section id="about">
     <h2>About Us</h2>
     <p>
-        A Bangalore-based law firm specializing in civil, criminal, corporate, 
-        and family law matters. We focus on protecting your rights with 
-        strategic legal expertise.
+        Lalith Kumar & Associates is a distinguished Bangalore-based law firm 
+        offering strategic legal representation in civil, criminal, corporate, 
+        and family law matters. We uphold integrity, discretion, and excellence 
+        in every case we undertake.
     </p>
 </section>
 
+<!-- PRACTICE -->
 <section id="practice">
     <h2>Areas of Practice</h2>
     <ul class="practice-list">
-        <li>✔ Civil Litigation</li>
-        <li>✔ Criminal Defense</li>
-        <li>✔ Family Law</li>
-        <li>✔ Corporate Law</li>
-        <li>✔ Property Law</li>
-        <li>✔ Legal Documentation</li>
+        <li>• Civil Litigation</li>
+        <li>• Criminal Defense</li>
+        <li>• Family & Matrimonial Law</li>
+        <li>• Corporate & Commercial Law</li>
+        <li>• Property & Real Estate Law</li>
+        <li>• Legal Documentation & Agreements</li>
     </ul>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91 98765 43210</p>
-    <p><strong>Email:</strong> info@lalithkumarassociates.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Email: info@lalithkumarassociates.com</p>
 
     <form class="contact-form">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
         <input type="tel" placeholder="Your Mobile Number" required>
         <textarea rows="5" placeholder="Describe your case..." required></textarea>
-        <button type="submit">Book Appointment</button>
+        <button type="submit">BOOK APPOINTMENT</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Lalith Kumar & Associates | All Rights Reserved</p>
+    © 2026 Lalith Kumar & Associates | All Rights Reserved
 </footer>
 
 </body>
