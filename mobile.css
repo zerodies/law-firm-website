@@ -1,0 +1,65 @@
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+  
+  /* HERO SECTION */
+  .hero {
+    height: auto; /* Let content define height */
+    padding: 60px 20px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* NAVIGATION */
+  nav {
+    padding: 15px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section p,
+  .practice-list li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* CONTACT FORM */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    width: 100%; /* Full-width button for easier tapping */
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 12px;
+    padding: 20px;
+  }
+}
